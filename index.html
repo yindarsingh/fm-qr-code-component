@@ -10,15 +10,43 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .card-wrapper {
+      width: 25%;
+      margin: auto;
+      border: 1px solid lightgray;
+      border-radius: 15px;
+    }
+    .card {
+      padding: 15px;
+    }
+    .card--image {
+      max-width: 100%;
+      display: block;
+      border: 1px solid white;
+      border-radius: 15px;
+    }
+    .card--title {
+      text-align: center;
+      padding: 10px 0px 10px 10px;
+    }
+    .card--text {
+      text-align: center;
+      padding: 0px 10px 10px 10px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <div class="card-wrapper">
+    <div class="card">
+      <img class="card--image" src="./images/image-qr-code.png" alt="">
+      <h2 class="card--title">Improve your front-end skills by building projects</h2>
+      <p class="card--text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
